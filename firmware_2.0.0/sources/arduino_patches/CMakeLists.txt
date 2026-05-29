@@ -1,0 +1,11 @@
+idf_component_register(
+  SRCS
+    "src/NetworkClientSecure.cpp"
+    "src/ssl_client.cpp"
+  INCLUDE_DIRS
+    "include"
+  PRIV_REQUIRES
+    arduino
+    lwip
+    mbedtls
+)
